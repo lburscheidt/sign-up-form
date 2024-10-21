@@ -12,24 +12,38 @@
       <div class="grey-bg" id="top">
         <p>
           This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams. Sign up now
-          to get started.
+          this in your life to help you realize your deepest dreams.<br>
+          Sign up <em>now</em> to get started.
         </p>
-        <p>You know you want to.</p>
+        <p>You <em>know</em> you want to.</p>
       </div>
       <div class="white-bg" id="middle">
         <form>
-          <label><input type="text"><span>First name</span></label>
+          <label
+            ><input type="text" minlength="2"><span>First name</span></label
+          >
           <label><input type="text"><span>Last name</span></label>
-          <label><input type="text" required><span>Email</span></label>
+          <label
+            ><input type="text" required type="email"><span>Email</span></label
+          >
           <label><input type="text" required><span>Phone number</span></label>
-          <label><input type="text" required><span>Password</span></label>
-          <label><input type="text"><span>Confirm password</span></label>
+          <label
+            ><input type="password" required minlength="8" maxlength="64"><span
+              >Password</span
+            ></label
+          >
+          <label
+            ><input type="password" required minlength="8" maxlength="64"><span
+              >Confirm password</span
+            ></label
+          >
         </form>
       </div>
       <div class="grey-bg" id="bottom">
-        <button>Create Account</button>
-        <p>Already have an account?<a href="#">Log in</a></p>
+        <div class="login">
+          <button>Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
       </div>
     </main>
     <script src="script.js"></script>

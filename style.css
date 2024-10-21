@@ -1,5 +1,64 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+/*reset ends*/
+
 :root {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #596d48;
+  font-weight: bold;
 }
 
 body {
@@ -15,7 +74,6 @@ aside {
 }
 
 main {
-  padding-left: 50px;
   justify-content: space-between;
   display: flex;
   flex-direction: column;
@@ -23,16 +81,29 @@ main {
   flex-shrink: 2;
 }
 
+.white-bg {
+  flex-shrink: 1.5;
+  flex-basis: 30%;
+  display: flex;
+}
+
 .grey-bg {
-  background-color: red;
-  flex-basis: 40%;
+  background-color: #e5e7eb;
+  flex-basis: 35%;
   flex-shrink: 1.5;
 }
 
-.white-bg {
-  flex-shrink: 1.5;
-  flex-basis: 20%;
+.grey-bg > p {
+  margin-left: 20px;
+}
+
+.login {
+  padding-top: 30px;
   display: flex;
+  flex-direction: column;
+  width: 250px;
+  align-items: flex-start;
+  margin-left: 20px;
 }
 
 form {
@@ -40,6 +111,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   flex-wrap: wrap;
   gap: 30px;
   flex-basis: 50%;
@@ -63,12 +135,38 @@ label > input[placeholder=" "]:not(:focus):placeholder-shown + span {
 }
 
 input {
-  height: 1rem;
+  height: 1.5rem;
   width: 200px;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+}
+
+input:invalid {
+  border: 1px solid red;
 }
 
 #top {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+#top > p {
+  width: 50%;
+  margin: 1.5rem;
+}
+
+button {
+  background-color: #596d48;
+  border-radius: 0.5rem;
+  padding: 10px 30px;
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
