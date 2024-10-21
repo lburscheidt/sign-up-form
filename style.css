@@ -1,8 +1,11 @@
+@font-face {
+  font-family: norse-bold;
+  src: url(Norse-Bold.otf);
+}
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
-
 *,
 *::before,
 *::after {
@@ -68,6 +71,9 @@ body {
 }
 
 aside {
+  display: flex;
+  flex-direction: column;
+
   flex-basis: calc(100vw / 3);
   flex-shrink: 1;
   background-image: url(aside.jpg);
@@ -81,14 +87,44 @@ main {
   flex-shrink: 2;
 }
 
+.top-aside {
+  font-family: norse-bold;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 35%;
+  height: 35%;
+
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  width: 100%;
+  font-size: 5rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo_x {
+  height: 100%;
+}
+
 .white-bg {
   flex-shrink: 1.5;
   flex-basis: 30%;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+  box-shadow: 0 20px 15px -15px #dddddd;
 }
 
 .grey-bg {
-  background-color: #e5e7eb;
+  background-color: #f9fafc;
   flex-basis: 35%;
   flex-shrink: 1.5;
 }
@@ -107,14 +143,22 @@ main {
 }
 
 form {
-  background-color: pink;
+  margin-left: 20px;
+  flex-basis: 60%;
+  width: 60%;
+  align-content: space-between;
+  padding-bottom: 30px;
+  /* background-color: pink;*/
   display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 30px;
-  flex-basis: 50%;
+}
+
+.white-bg > p {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-left: 20px;
 }
 
 label {
@@ -139,6 +183,7 @@ input {
   width: 200px;
   border: 1px solid #e5e7eb;
   border-radius: 0.25rem;
+  display: block;
 }
 
 input:invalid {
@@ -170,3 +215,15 @@ button {
   font-size: 1rem;
   margin-bottom: 20px;
 }
+
+.error {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: -30px;
+}
+
+/*form:has(input:invalid) {
+  .error {
+    display: inline;
+  }
+}*/
