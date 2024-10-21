@@ -128,7 +128,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 30px;
   box-shadow: 0 20px 15px -15px #dddddd;
 }
 
@@ -161,7 +161,7 @@ form {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 40px;
 }
 
 .white-bg > p {
@@ -189,7 +189,7 @@ label > input[placeholder=" "]:not(:focus):placeholder-shown + span {
 
 input {
   height: 1.5rem;
-  width: 200px;
+  width: 250px;
   border: 1px solid #e5e7eb;
   border-radius: 0.25rem;
   display: block;
@@ -224,15 +224,3 @@ button {
   font-size: 1rem;
   margin-bottom: 20px;
 }
-
-.error {
-  color: red;
-  font-size: 0.75rem;
-  margin-top: -30px;
-}
-
-/*form:has(input:invalid) {
-  .error {
-    display: inline;
-  }
-}*/
