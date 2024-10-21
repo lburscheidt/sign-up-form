@@ -73,10 +73,19 @@ body {
 aside {
   display: flex;
   flex-direction: column;
-
+  justify-content: space-between;
   flex-basis: calc(100vw / 3);
   flex-shrink: 1;
   background-image: url(aside.jpg);
+}
+
+.aside-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 2rem;
 }
 
 main {
