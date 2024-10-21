@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Sign-up form</title>
   </head>
   <body>
@@ -19,15 +19,18 @@
       </div>
       <div class="white-bg" id="middle">
         <form>
-          <label><input type="text" /><span>First name</span></label>
-          <label><input type="text" /><span>Last name</span></label>
-          <label><input type="text" /><span>Email</span></label>
-          <label><input type="text" /><span>Phone number</span></label>
-          <label><input type="text" /><span>Password</span></label>
-          <label><input type="text" /><span>Confirm password</span></label>
+          <label><input type="text"><span>First name</span></label>
+          <label><input type="text"><span>Last name</span></label>
+          <label><input type="text" required><span>Email</span></label>
+          <label><input type="text" required><span>Phone number</span></label>
+          <label><input type="text" required><span>Password</span></label>
+          <label><input type="text"><span>Confirm password</span></label>
         </form>
       </div>
-      <div class="grey-bg" id="bottom"></div>
+      <div class="grey-bg" id="bottom">
+        <button>Create Account</button>
+        <p>Already have an account?<a href="#">Log in</a></p>
+      </div>
     </main>
     <script src="script.js"></script>
   </body>

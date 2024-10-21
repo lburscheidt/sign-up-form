@@ -66,3 +66,9 @@ input {
   height: 1rem;
   width: 200px;
 }
+
+#top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
