@@ -1,0 +1,30 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+aside {
+  flex-basis: calc(100vw / 3);
+  flex-shrink: 1;
+  background-color: lime;
+}
+
+main {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(2 * 100vw / 3);
+  flex-shrink: 2;
+}
+
+.grey-bg {
+  background-color: red;
+  flex-basis: 35%;
+  flex-shrink: 1.5;
+}
+
+.white-bg {
+  flex-shrink: 1.5;
+  flex-basis: 30%;
+}
